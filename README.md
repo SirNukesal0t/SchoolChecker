@@ -32,9 +32,11 @@ Management Features
 2) Grades (Functional)
 3) Group Projects (In Progress)
 4) Notes (In Progress)
+
 Bugs
 -
 None so far
+
 Planned Features
 -
 1) Implement Login (via API)
