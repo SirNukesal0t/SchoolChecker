@@ -1,5 +1,7 @@
 # SchoolChecker #C, WPF
-Beschreibung: SchoolChecker ist ein Programm in dem man seine Noten, Prüfungsdaten, Notizen und Gruppenarbeiten verwalten kann. 
+Beschreibung
+-
+SchoolChecker ist ein Programm in dem man seine Noten, Prüfungsdaten, Notizen und Gruppenarbeiten verwalten kann. 
 Das Programm erstellt Vorschläge für Noten, um den gewünschten Notenschnitt zu erreichen
 
 Verwaltung von
@@ -15,6 +17,25 @@ Noch keine
 
 In Plannung
 -
-1) Login implementieren (API)
+1) Login implementieren (via API)
 2) Datenbank verbindung (MongoDB)
 
+# English
+Description
+-
+SchoolChecker is a program that allows users to manage their grades, exam dates, notes, and group projects.
+The program generates grade suggestions to help achieve the desired average.
+
+Management Features
+-
+Exam Dates (Functional)
+Grades (Functional)
+Group Projects (In Progress)
+Notes (In Progress)
+Bugs
+-
+None so far
+Planned Features
+-
+Implement Login (via API)
+Database Integration (MongoDB)
