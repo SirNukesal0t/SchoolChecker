@@ -9,8 +9,9 @@ Verwaltung von
 3) Gruppenarbeite  (in Arbeit)
 4) Notizen         (in Arbeit)
 
-Buggs:
-Bekannt 0
+Buggs
+-
+Noch keine
 
 In Plannung
 -
