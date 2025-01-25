@@ -28,14 +28,14 @@ The program generates grade suggestions to help achieve the desired average.
 
 Management Features
 -
-Exam Dates (Functional)
-Grades (Functional)
-Group Projects (In Progress)
-Notes (In Progress)
+1) Exam Dates (Functional)
+2) Grades (Functional)
+3) Group Projects (In Progress)
+4) Notes (In Progress)
 Bugs
 -
 None so far
 Planned Features
 -
-Implement Login (via API)
-Database Integration (MongoDB)
+1) Implement Login (via API)
+2) Database Integration (MongoDB)
