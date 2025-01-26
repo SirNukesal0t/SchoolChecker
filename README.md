@@ -11,7 +11,7 @@ Verwaltung von
 3) Gruppenarbeite  (in Arbeit)
 4) Notizen         (in Arbeit)
 
-Buggs
+Bugs
 -
 Noch keine
 
