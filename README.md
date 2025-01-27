@@ -13,7 +13,7 @@ Verwaltung von
 
 Bugs
 -
-Noch keine
+Noten Vorschläge funktioniert nicht zu 100%
 
 In Plannung
 -
@@ -35,7 +35,7 @@ Management Features
 
 Bugs
 -
-None so far
+Grade suggestions don't work 100%
 
 Planned Features
 -
