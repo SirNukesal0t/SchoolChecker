@@ -1,0 +1,57 @@
+﻿<Window x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SchoolChecker" Height="400" Width="300"
+        Background="#f9f9f9">
+    <Window.Resources>
+        <Style x:Key="StylishButton" TargetType="Button">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Background" Value="#4CAF50" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#45A049" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#388E3C" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Titel -->
+        <TextBlock Grid.Row="0" FontSize="20" FontWeight="Bold"
+                   HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="#333" ><Run Language="de-de" Text="SchoolChecker"/></TextBlock>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Top">
+            <Button Content="Prüfungsdaten" Style="{StaticResource StylishButton}" Click="Pruefungsdaten_Click" Margin="0,5,0,0"/>
+            <Button Content="Noten" Style="{StaticResource StylishButton}" Click="Noten_Click" Margin="0,5,0,0"/>
+            <Button Content="Gruppenarbeit" Style="{StaticResource StylishButton}" Click="Gruppenarbeit_Click" Margin="0,5,0,0"/>
+            <Button Content="Notizen" Style="{StaticResource StylishButton}" Click="Notizen_Click" Margin="0,5,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
+

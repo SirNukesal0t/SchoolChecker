@@ -1,0 +1,68 @@
+﻿<Window x:Class="WPFApp.ModuleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Modulverwaltung" Height="400" Width="400"
+        Background="#f9f9f9">
+    <Window.Resources>
+        <Style x:Key="StylishButton" TargetType="Button">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Background" Value="#4CAF50" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#45A049" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#388E3C" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Titel -->
+        <TextBlock Grid.Row="0" FontSize="20" FontWeight="Bold"
+                   HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="#333" ><Run Language="de-de" Text="Modulverwaltung"/></TextBlock>
+
+        <!-- Noten -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Top">
+            <Button Content="Note hinzufügen" Style="{StaticResource StylishButton}" Click="AddGrade_Click" Margin="0,5,0,0"/>
+            <ListBox Name="GradesListBox" Margin="0,10,0,0" Background="#f9f9f9" BorderBrush="#4CAF50" BorderThickness="1"/>
+            <TextBlock Name="AverageTextBlock" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <!-- Gewünschter Schnitt und Vorschläge -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <TextBlock Text="Gewünschter Schnitt:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox Name="DesiredAverageTextBox" Width="50" Margin="0,0,10,0" Background="#f9f9f9" BorderBrush="#4CAF50" BorderThickness="1"/>
+            <Button Content="Vorschlag" Style="{StaticResource StylishButton}" Click="SuggestGrade_Click"/>
+        </StackPanel>
+
+        <!-- Schliessen -->
+        <Button Grid.Row="3" Content="Schliessen" Style="{StaticResource StylishButton}" Click="Close_Click" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+    </Grid>
+</Window>
+
