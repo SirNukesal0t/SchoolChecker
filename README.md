@@ -17,7 +17,7 @@ Noten Vorschläge funktioniert nicht zu 100%
 
 In Plannung
 -
-1) Login implementieren (via API)
+1) Login implementieren 
 2) Datenbank verbindung (MongoDB)
 3) Kalender API hinzufügen (Google Calendar)
 
@@ -40,6 +40,6 @@ Grade suggestions don't work 100%
 
 Planned Features
 -
-1) Implement Login (via API)
+1) Implement Login 
 2) Database Integration (MongoDB)
 3) Add Calendar API (Google Calendar) 
