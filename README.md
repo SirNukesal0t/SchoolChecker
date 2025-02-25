@@ -36,7 +36,7 @@ Management Features
 
 Bugs
 -
-Grade suggestions don't work 100%
+Grade suggestions doesn't work 100%
 
 Planned Features
 -
